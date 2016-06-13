@@ -1,0 +1,45 @@
+PODS:
+  - CocoaAsyncSocket (7.4.3):
+    - CocoaAsyncSocket/All (= 7.4.3)
+  - CocoaAsyncSocket/All (7.4.3):
+    - CocoaAsyncSocket/GCD
+    - CocoaAsyncSocket/RunLoop
+  - CocoaAsyncSocket/GCD (7.4.3)
+  - CocoaAsyncSocket/RunLoop (7.4.3)
+  - CocoaHTTPServer (2.3):
+    - CocoaAsyncSocket
+    - CocoaLumberjack
+  - CocoaLumberjack (2.3.0):
+    - CocoaLumberjack/Default (= 2.3.0)
+    - CocoaLumberjack/Extensions (= 2.3.0)
+  - CocoaLumberjack/Core (2.3.0)
+  - CocoaLumberjack/Default (2.3.0):
+    - CocoaLumberjack/Core
+  - CocoaLumberjack/Extensions (2.3.0):
+    - CocoaLumberjack/Default
+  - Masonry (1.0.0)
+  - SDWebImage (3.7.6):
+    - SDWebImage/Core (= 3.7.6)
+  - SDWebImage/Core (3.7.6)
+  - SSZipArchive (1.2)
+  - YYModel (1.0.3)
+
+DEPENDENCIES:
+  - CocoaHTTPServer (= 2.3)
+  - Masonry (= 1.0.0)
+  - SDWebImage (= 3.7.6)
+  - SSZipArchive (= 1.2)
+  - YYModel (= 1.0.3)
+
+SPEC CHECKSUMS:
+  CocoaAsyncSocket: a18c75dca4b08723628a0bacca6e94803d90be91
+  CocoaHTTPServer: 5624681fc3473d43b18202f635f9b3abb013b530
+  CocoaLumberjack: 97fab7ee5f507fe54445cca7ea80f926729cfd15
+  Masonry: b529bb169217897b6354d4b56b1fada6d475b13d
+  SDWebImage: c325cf02c30337336b95beff20a13df489ec0ec9
+  SSZipArchive: 251093c65f98d6ea282c50bc404bfa631d9fd721
+  YYModel: 63142c2f07c5c8c9d1c261689cf3827ea6ab2886
+
+PODFILE CHECKSUM: 34de6f78f2c817c8ca3e52ddb0d67420b250b914
+
+COCOAPODS: 1.0.0
