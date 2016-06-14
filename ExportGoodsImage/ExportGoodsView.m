@@ -66,7 +66,7 @@
         _productInformationLabel = [[UILabel alloc] initWithFrame:CGRectZero];
         _productInformationLabel.font = [UIFont fontWithName:Font_ACaslonPro_Italic size:13];
         _productInformationLabel.text = @"Product Information";
-        _productInformationLabel.textColor = RGB(0xa3, 0xa3, 0xa3);
+        _productInformationLabel.textColor = RGBA(0xa3, 0xa3, 0xa3, 0.5);
         [self addSubview:_productInformationLabel];
         
         _borderView = [[UIView alloc] initWithFrame:CGRectZero];
@@ -319,7 +319,11 @@
             top = (height + 14) * (i / 3);
             SizeParaLabel *label = [[SizeParaLabel alloc] initWithFrame:CGRectMake(left, top, width, height)];
             NSArray *arr = data.customerProperties[keys[i]];
-            label.contentLabel.text = [NSString stringWithFormat:@"%@:%@", keys[i], arr[0]];
+            if (arr.count) {
+                label.contentLabel.text = [NSString stringWithFormat:@"%@:%@", keys[i], [arr componentsJoinedByString:@" "]];
+            } else {
+                label.contentLabel.text = [NSString stringWithFormat:@"%@:/", keys[i]];
+            }
             [_sizeParaContentView addSubview:label];
         }
         
@@ -357,7 +361,12 @@
                 if (i == 0) {
                     label.text = sizeTablesKey[j];
                 } else {
-                    label.text = val[sizes[i - 1]];
+                    NSString *str = val[sizes[i - 1]];
+                    if (str.length) {
+                        label.text = val[sizes[i - 1]];
+                    } else {
+                        label.text = @"/";
+                    }
                 }
                 left += width;
                 [_sizeMaterialsContentView addSubview:label];
