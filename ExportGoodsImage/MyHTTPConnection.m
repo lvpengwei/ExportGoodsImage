@@ -34,7 +34,10 @@
         [[NSRunLoop currentRunLoop] removePort:port forMode:NSDefaultRunLoopMode];
         CFRunLoopStop(CFRunLoopGetCurrent());
         [ExportImageManager sharedInstance].thread = nil;
-        NSData *response = [[NSString stringWithFormat:@"<html><body><a href='http://%@'>Zip</a><body></html>", [ExportImageManager sharedInstance].zipUrl] dataUsingEncoding:NSUTF8StringEncoding];
+        // 压缩
+        [[ExportImageManager sharedInstance] createZipFile];
+        NSData *response = [[NSString stringWithFormat:@"<html><body><a href='http://%@'>Download</a><body></html>", [ExportImageManager sharedInstance].downloadUrl] dataUsingEncoding:NSUTF8StringEncoding];
+//        NSData *response = [[NSString stringWithFormat:@"<html><body><a href='http://%@'>Zip</a><body></html>", [ExportImageManager sharedInstance].zipUrl] dataUsingEncoding:NSUTF8StringEncoding];
         return [[HTTPDataResponse alloc] initWithData:response];
     }
     return [super httpResponseForMethod:method URI:path];
