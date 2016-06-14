@@ -8,6 +8,7 @@
 
 #import "SizeParaLabel.h"
 #import "Masonry/Masonry.h"
+#import "Config.h"
 
 @interface SizeParaLabel ()
 
@@ -26,11 +27,11 @@
         
         _contentLabel = [[UILabel alloc] initWithFrame:CGRectZero];
         _contentLabel.textColor = [UIColor blackColor];
-        _contentLabel.font = [UIFont systemFontOfSize:13];
+        _contentLabel.font = [UIFont fontWithName:Font_Lantinghei_jian_xian size:13];
         [self addSubview:_contentLabel];
         
         [_leftView mas_makeConstraints:^(MASConstraintMaker *make) {
-            make.leading.equalTo(self).offset(10);
+            make.leading.equalTo(self).offset(5);
             make.width.height.equalTo(@10);
             make.centerY.equalTo(self);
         }];

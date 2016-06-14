@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-// width 520
+// width 500
 
 @class GoodsData;
 

@@ -47,7 +47,7 @@
         
         [_goodsView mas_makeConstraints:^(MASConstraintMaker *make) {
             make.leading.trailing.top.bottom.equalTo(_contentScrollView);
-            make.width.equalTo(@520);
+            make.width.equalTo(@500);
         }];
     }
     return self;

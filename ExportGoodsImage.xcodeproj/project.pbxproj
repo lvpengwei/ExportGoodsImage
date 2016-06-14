@@ -23,6 +23,12 @@
 		E64EDE361D0D74150003C26C /* ExportImageManager.m in Sources */ = {isa = PBXBuildFile; fileRef = E64EDE351D0D74150003C26C /* ExportImageManager.m */; };
 		E64EDE5E1D0E8DF10003C26C /* goods.json in Resources */ = {isa = PBXBuildFile; fileRef = E64EDE5D1D0E8DF10003C26C /* goods.json */; };
 		E64EDE601D0E8EBC0003C26C /* InterfaceUrl.plist in Resources */ = {isa = PBXBuildFile; fileRef = E64EDE5F1D0E8EBC0003C26C /* InterfaceUrl.plist */; };
+		E64EDE681D0FC0450003C26C /* ACaslonPro_BoldItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = E64EDE621D0FC0450003C26C /* ACaslonPro_BoldItalic.otf */; };
+		E64EDE691D0FC0450003C26C /* ACaslonPro_Italic.otf in Resources */ = {isa = PBXBuildFile; fileRef = E64EDE631D0FC0450003C26C /* ACaslonPro_Italic.otf */; };
+		E64EDE6A1D0FC0450003C26C /* ACaslonPro_SemiboldItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = E64EDE641D0FC0450003C26C /* ACaslonPro_SemiboldItalic.otf */; };
+		E64EDE6B1D0FC0450003C26C /* AdobeHeitiStd_Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = E64EDE651D0FC0450003C26C /* AdobeHeitiStd_Regular.otf */; };
+		E64EDE6C1D0FC0450003C26C /* Bradley_Hand_Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E64EDE661D0FC0450003C26C /* Bradley_Hand_Bold.ttf */; };
+		E64EDE6D1D0FC0450003C26C /* Lantinghei.ttc in Resources */ = {isa = PBXBuildFile; fileRef = E64EDE671D0FC0450003C26C /* Lantinghei.ttc */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -56,6 +62,12 @@
 		E64EDE371D0DA7860003C26C /* Config.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Config.h; sourceTree = "<group>"; };
 		E64EDE5D1D0E8DF10003C26C /* goods.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = goods.json; sourceTree = "<group>"; };
 		E64EDE5F1D0E8EBC0003C26C /* InterfaceUrl.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = InterfaceUrl.plist; sourceTree = "<group>"; };
+		E64EDE621D0FC0450003C26C /* ACaslonPro_BoldItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = ACaslonPro_BoldItalic.otf; sourceTree = "<group>"; };
+		E64EDE631D0FC0450003C26C /* ACaslonPro_Italic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = ACaslonPro_Italic.otf; sourceTree = "<group>"; };
+		E64EDE641D0FC0450003C26C /* ACaslonPro_SemiboldItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = ACaslonPro_SemiboldItalic.otf; sourceTree = "<group>"; };
+		E64EDE651D0FC0450003C26C /* AdobeHeitiStd_Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = AdobeHeitiStd_Regular.otf; sourceTree = "<group>"; };
+		E64EDE661D0FC0450003C26C /* Bradley_Hand_Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Bradley_Hand_Bold.ttf; sourceTree = "<group>"; };
+		E64EDE671D0FC0450003C26C /* Lantinghei.ttc */ = {isa = PBXFileReference; lastKnownFileType = file; path = Lantinghei.ttc; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -108,6 +120,7 @@
 		E64EDE0A1D0C12C30003C26C /* ExportGoodsImage */ = {
 			isa = PBXGroup;
 			children = (
+				E64EDE611D0FC0310003C26C /* fonts */,
 				E64EDE0E1D0C12C30003C26C /* AppDelegate.h */,
 				E64EDE0F1D0C12C30003C26C /* AppDelegate.m */,
 				E64EDE111D0C12C30003C26C /* ViewController.h */,
@@ -144,6 +157,19 @@
 				E64EDE0C1D0C12C30003C26C /* main.m */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		E64EDE611D0FC0310003C26C /* fonts */ = {
+			isa = PBXGroup;
+			children = (
+				E64EDE621D0FC0450003C26C /* ACaslonPro_BoldItalic.otf */,
+				E64EDE631D0FC0450003C26C /* ACaslonPro_Italic.otf */,
+				E64EDE641D0FC0450003C26C /* ACaslonPro_SemiboldItalic.otf */,
+				E64EDE651D0FC0450003C26C /* AdobeHeitiStd_Regular.otf */,
+				E64EDE661D0FC0450003C26C /* Bradley_Hand_Bold.ttf */,
+				E64EDE671D0FC0450003C26C /* Lantinghei.ttc */,
+			);
+			path = fonts;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -206,10 +232,16 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E64EDE6A1D0FC0450003C26C /* ACaslonPro_SemiboldItalic.otf in Resources */,
 				E64EDE1B1D0C12C30003C26C /* LaunchScreen.storyboard in Resources */,
 				E64EDE181D0C12C30003C26C /* Assets.xcassets in Resources */,
+				E64EDE6B1D0FC0450003C26C /* AdobeHeitiStd_Regular.otf in Resources */,
 				E64EDE601D0E8EBC0003C26C /* InterfaceUrl.plist in Resources */,
 				E64EDE5E1D0E8DF10003C26C /* goods.json in Resources */,
+				E64EDE6C1D0FC0450003C26C /* Bradley_Hand_Bold.ttf in Resources */,
+				E64EDE681D0FC0450003C26C /* ACaslonPro_BoldItalic.otf in Resources */,
+				E64EDE6D1D0FC0450003C26C /* Lantinghei.ttc in Resources */,
+				E64EDE691D0FC0450003C26C /* ACaslonPro_Italic.otf in Resources */,
 				E64EDE161D0C12C30003C26C /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

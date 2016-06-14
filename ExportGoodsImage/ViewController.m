@@ -20,7 +20,7 @@
 
 @interface ViewController ()
 
-//@property (nonatomic, strong) ImageLoadModel *loadModel;
+@property (nonatomic, strong) ImageLoadModel *loadModel;
 @property (nonatomic, strong) HTTPServer *httpServer;
 @property (weak, nonatomic) IBOutlet UILabel *createLabel;
 @property (weak, nonatomic) IBOutlet UILabel *zipLabel;
@@ -34,7 +34,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // 临时显示
+//    // 临时显示
 //    _loadModel = [[ImageLoadModel alloc] init];
 //    _loadModel.goodsId = @"27021599157995855";
 //    
@@ -44,8 +44,17 @@
 //    [scrollView mas_makeConstraints:^(MASConstraintMaker *make) {
 //        make.leading.trailing.top.bottom.equalTo(self.view);
 //    }];
-    
+//    
 //    [_loadModel startLoad];
+//    
+//    // 打印Font
+//    NSArray *fontFamilies = [UIFont familyNames];
+//    for (int i = 0; i < [fontFamilies count]; i++)
+//    {
+//        NSString *fontFamily = [fontFamilies objectAtIndex:i];
+//        NSArray *fontNames = [UIFont fontNamesForFamilyName:[fontFamilies objectAtIndex:i]];
+//        NSLog (@"%@: %@", fontFamily, fontNames);
+//    }
     
     _httpServer = [[HTTPServer alloc] init];
     [_httpServer setType:@"_http._tcp."];
